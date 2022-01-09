@@ -13,10 +13,6 @@ def getPredictions(eText):
           else:
               res="Not Spam" 
      return res
-    
-
-
-    
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
@@ -27,11 +23,6 @@ def index():
         result=getPredictions(eText)
         return render_template('result.html', result=result)
     return render_template('index.html')
-
-
-
-    
-
 
 if __name__ == "__main__":
     app.run(debug=True, port=8000)

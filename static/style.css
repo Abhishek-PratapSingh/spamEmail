@@ -1,0 +1,37 @@
+/*html{
+    font-size: 62.5%;
+}
+@media(max-width:998 px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:768 px){
+    html{
+        font-size: 45%;
+    }
+}
+*/
+navbar{
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.box , .res{
+    background-color: rgb(177, 222, 243);
+    min-height: 100vh;
+}
+.mb-3,.form-control{
+    background-color: darkcyan;
+}
+.extra{
+    text-align: center;
+    padding: 3rem 1rem;
+    color: rgb(74, 185, 236);
+    font-size: large;
+}
+img  {
+    margin: auto;
+    display: block;
+    width: 15rem;
+  }
