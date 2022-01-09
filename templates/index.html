@@ -1,36 +1,54 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark " style="background-color: darkblue ;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/"><h1> Spam Email Detection </h1></a>
 
-{% block title %}
-  Home
-{% endblock title %}
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <marquee style="background-color: darkblue; margin: 0px;" behavior="" direction="left" scrollamount="30">
+        <h2 style="color: cyan;" >Welcome to our Website</h2>
+    </marquee>
 
-{% block body %}
+    <div class="box">
+        <img class="center" src="https://miro.medium.com/max/1024/1*pWzWiDuVsox3nmeK_8pqlg.png" >
 
-    
-
-      <div class="container my-4">
-
-        <h2>Paste your email content Here!!</h2>
+        <div class="container my-4">
+       <br>
+        <h2 style="font-style: italic; color: cadetblue;">Paste your email content Here!!</h2>
+        <hr>
         <form action="/" method="POST">
-            <div class="mb-3">
+            <div class="mb-4">
                 <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="emailText"></textarea>
+                <textarea style="width: 70vw; height: 30vh; background-color: rgba(155, 198, 238, 0.911); border: 5px solid rgb(54, 97, 179);" class="form-control" id="exampleFormControlTextarea1" rows="4" name="emailText"></textarea>
               </div>
-            
+              <hr>
+              <br>
             <button type="submit" class="btn btn-outline-primary">Submit</button>
           </form>
+          <br>
+          <div class="extra">
+            <h2>Thank You! For Visiting Here</h2>
+        </div>
       </div>
+    </div>
 
-  
+</body>
+</html>
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-    {% endblock body %}
