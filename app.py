@@ -25,4 +25,4 @@ def index():
     return render_template('index.html')
 
 if __name__ == "__main__":
-    app.run(debug=True, port=Process.env.PORT || 8000)
+    app.run(debug=True)
