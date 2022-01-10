@@ -1,5 +1,5 @@
 # Spam Email Detection Web Tool
-This is web tool to detection spam email based on the email content.
+This is a web tool to detect spam emails based on the email content.
 
 webpage link: [Email Spam Detection](https://spamemaildetectionapp.herokuapp.com/)
 
